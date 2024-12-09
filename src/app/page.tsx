@@ -3,6 +3,8 @@ const everyone = [
   'squirt', 'darla'
 ];
 
+const large = new Array(1000000).fill('nemo');
+
 function findNemo(array : any[]) {
   for (let i = 0; i < array.length; i++ ) {
     if (array[i] === 'nemo') {
@@ -11,4 +13,4 @@ function findNemo(array : any[]) {
   }
 }
 
-findNemo(everyone);
+findNemo(large); // O(n) Linear Time
